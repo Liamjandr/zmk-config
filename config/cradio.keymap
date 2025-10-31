@@ -32,8 +32,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        layers = <default_layer right_layer left_layer tri_layer>;
-
+        
         default_layer {
             display-name = "Default Layer";
             bindings = <
