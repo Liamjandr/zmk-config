@@ -24,10 +24,10 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
+    //    tri_layer {
+    //        if-layers = <1 2>;
+    //       then-layer = <3>;
+    //     };
     };
 
     keymap {
@@ -64,7 +64,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
            &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans    &trans    
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &to 0      &kp ESC        &trans     &to 2
+                                             &to 0      &kp ESC        &to 0      &to 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -100,7 +100,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &to 0     &trans         &trans     &trans
+                                             &to 0     &trans          &to 2      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
